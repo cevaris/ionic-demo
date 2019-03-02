@@ -24,6 +24,11 @@ export class AppComponent {
             title: 'Buttons',
             url: '/buttons',
             icon: 'finger-print'
+        },
+        {
+            title: 'Case Action Sheet',
+            url: '/case-action-sheet',
+            icon: 'menu'
         }
 
     ];

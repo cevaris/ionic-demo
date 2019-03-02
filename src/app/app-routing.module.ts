@@ -18,6 +18,10 @@ const routes: Routes = [
     {
         path: 'buttons',
         loadChildren: './buttons/buttons.module#ButtonsPageModule'
+    },
+    {
+        path: 'case-action-sheet',
+        loadChildren: './case-action-sheet/case-action-sheet.module#CaseActionSheetPageModule'
     }
 ];
 
