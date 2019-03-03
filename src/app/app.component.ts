@@ -29,6 +29,11 @@ export class AppComponent {
             title: 'Case Action Sheet',
             url: '/case-action-sheet',
             icon: 'menu'
+        },
+        {
+            title: 'Poké Infinite Scroll',
+            url: '/poke-infinite-scroll',
+            icon: 'paw'
         }
 
     ];

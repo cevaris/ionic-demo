@@ -22,6 +22,10 @@ const routes: Routes = [
     {
         path: 'case-action-sheet',
         loadChildren: './case-action-sheet/case-action-sheet.module#CaseActionSheetPageModule'
+    },
+    {
+        path: 'poke-infinite-scroll',
+        loadChildren: './poke-infinite-scroll/poke-infinite-scroll.module#PokeInfiniteScrollPageModule'
     }
 ];
 
