@@ -34,6 +34,11 @@ export class AppComponent {
             title: 'Poké Infinite Scroll',
             url: '/poke-infinite-scroll',
             icon: 'paw'
+        },
+        {
+            title: 'Login Modal',
+            url: '/login-modal',
+            icon: 'lock'
         }
 
     ];

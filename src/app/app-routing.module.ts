@@ -26,6 +26,10 @@ const routes: Routes = [
     {
         path: 'poke-infinite-scroll',
         loadChildren: './poke-infinite-scroll/poke-infinite-scroll.module#PokeInfiniteScrollPageModule'
+    },
+    {
+        path: 'login-modal',
+        loadChildren: './login-modal/login-modal.module#LoginModalPageModule'
     }
 ];
 
