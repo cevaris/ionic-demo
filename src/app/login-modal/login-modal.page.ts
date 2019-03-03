@@ -9,8 +9,14 @@ import {ModalPage} from "./modal/modal.page";
 })
 export class LoginModalPage {
     constructor(public modalController: ModalController) {
+        this.authenticatedUser = {
+            username: 'not-logged-in',
+            apiKey: 'not-authenticated'
+        };
         this.presentModal();
     }
+
+    authenticatedUser: object;
 
     async presentModal() {
         const modal = await this.modalController.create({
@@ -25,6 +31,7 @@ export class LoginModalPage {
         modal.onDidDismiss().then((detail) => {
             if (detail !== null) {
                 console.log('The result:', detail.data);
+                this.authenticatedUser = detail.data;
             }
         });
 
