@@ -14,9 +14,9 @@
     <ion-item *ngFor="let i of data">
       <ion-grid>
         <ion-row>
-          <ion-col col-2>111</ion-col>
+          <ion-col col-2>{{i.id}}</ion-col>
           <ion-col col-10>
-            <ion-img src={{i}}></ion-img>
+            <ion-img src={{i.imgUrl}}></ion-img>
           </ion-col>
         </ion-row>
       </ion-grid>
