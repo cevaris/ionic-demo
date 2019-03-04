@@ -1,6 +1,8 @@
 {
   "name": "ionic-demo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "b7d5c06a"
 }

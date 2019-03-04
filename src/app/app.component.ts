@@ -52,9 +52,11 @@ export class AppComponent {
     }
 
     initializeApp() {
+        console.log('initializing...');
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
+            console.log('initialized...');
         });
     }
 }
