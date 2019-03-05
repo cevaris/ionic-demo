@@ -1,6 +1,7 @@
-import {Component} from '@angular/core';
-import {ModalController} from "@ionic/angular";
-import {ModalPage} from "./modal/modal.page";
+import { Component } from '@angular/core';
+import { ModalController } from "@ionic/angular";
+import { ModalPage } from "./modal/modal.page";
+import { AuthenticatedUser } from './AuthenticatedUser';
 
 @Component({
     selector: 'app-home',
@@ -8,15 +9,16 @@ import {ModalPage} from "./modal/modal.page";
     styleUrls: ['login-modal.page.scss'],
 })
 export class LoginModalPage {
+
+    authenticatedUser: AuthenticatedUser
+
     constructor(public modalController: ModalController) {
-        this.authenticatedUser = {
+        this.authenticatedUser = new AuthenticatedUser({
             username: 'not-logged-in',
             apiKey: 'not-authenticated'
-        };
+        });
         this.presentModal();
     }
-
-    authenticatedUser: object;
 
     async presentModal() {
         const modal = await this.modalController.create({
